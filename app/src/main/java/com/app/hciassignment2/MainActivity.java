@@ -119,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
         if (!validEt(etDob, etDob.getText().toString()))
             tasksFailed++;
 
+
         double efficiency = getEfficiency(tasksFailed);
         double effectiveness = getEffectiveness(tasksFailed);
         Toast.makeText(this, "Tasks Failed : " + tasksFailed, Toast.LENGTH_SHORT).show();
